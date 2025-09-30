@@ -81,7 +81,7 @@ manual <- c(5,
 
 mean(manual) #mean
 #average deviation?
-sum_of_squares <-sum(manual^2) #sum of squares
+sum_of_squares <-sum((manual - mean(manual))^2) #sum of squares
 deg_of_free <- length(manual)-1 #degrees of freedom
 var(manual) #sample variance
 sd(manual) #standard deviation
